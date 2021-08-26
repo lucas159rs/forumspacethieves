@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/logotipo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title> Fórum Space Thieves</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Fórum Space Thieves</h1>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Início</a>
+            </li>
+            <li>
+                <a href="login_page.html">Login</a>
+            </li>
+            <li>
+                <a href="#download" onclick="link_download()">Download</a>
+            </li>
+            <li>
+                <a href="feedback_page.html">Feedback</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line-button-dropdown"></div>
+            <div class="line-button-dropdown"></div>
+            <div class="line-button-dropdown"></div>
+        </div>
+    </nav>
+    <div class="div-content">
+        <form>
+            <h1>Cadastre-se</h1>
+            <input id="name" type="text" placeholder="Seu Nome Completo">
+            <input id="email" type="text" placeholder="Seu e-mail">
+            <input id="password" type="password" maxlength="7" placeholder="Sua senha de 7 caracteres">
+            <input id="passwordConfirm" type="password" maxlength="7" placeholder="Confirme sua senha">
+            <button id="button" type="submit">Cadastrar-se</button>
+            <button type="button" onclick="login_page()">Login</button>
+        </form>
+    </div>
+    <footer>
+        <p id="sobre">Fórum Oficial do Space Thieves. Acompanhe aqui todas as novidades do "Game of The Year 2021".</p>
+        <ul class="footer-links">
+            <li>
+                <a href="index.html">Início</a>
+            </li>
+            <li>
+                <a href="login_page.html">Login</a>
+            </li>
+            <li>
+                <a href="#" onclick="link_download()">Download</a>
+            </li>
+            <li>
+                <a href="feedback_page.html">Feedback</a>
+            </li>
+        </ul>
+        <p id="copyright">&copy; Todos os direitos e notas reservados a Lucas Santos.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/cadastro_script.js"></script>
+</body>
+
+</html>

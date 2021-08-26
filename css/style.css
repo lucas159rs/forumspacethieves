@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../assets/background.jpeg');
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #16151c;
+    user-select: none;
+    font-family: 'Righteous', cursive;
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: #09d2d9;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff;
+    margin: 5px;
+}
+
+.nav-active{
+    transform: translateX(0%) !important;
+}
+
+.div-content{
+    width: 700px;
+    margin: 40px auto; 
+
+}
+
+.title {
+    padding: 0px 50px 15px 50px;
+    color: #ffffff;
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    cursor: default;
+}
+
+.post {
+    cursor: pointer;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: .6rem;
+    border:3px #000000 inset;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.post-image {
+    align-content: center;
+    background-color: #ffffff;
+    border-top-left-radius: .6rem;
+    border-top-right-radius: .6rem;
+    display: flex;
+    flex: 5;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.post-content h3{
+    font-family: 'Righteous', cursive;
+}
+
+.post-content p{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+footer {
+    padding: 10px 0px;
+    background-color: #16151c;
+}
+
+.footer-links{
+    margin: 0 auto;
+    padding: 10px 0px;
+    line-height: 5vh;
+    font-family: 'Righteous', cursive;
+    user-select: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.footer-links li{
+    list-style: none;
+}
+
+.footer-links li a{
+    color: #09d2d9;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.footer-links li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    padding: 0px 30px;
+    text-align: center;
+    color: #d5d8f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#copyright{
+    opacity: 0.5;
+}
+
+form{
+    background-color: #16151c;
+    width: 100%;
+    padding: 20px;
+    border-radius: .6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form h1{
+    color: #09d2d9;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+form input, textarea{
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid #09d2d9;
+    border-radius: 0.6rem;
+    padding: 5px;
+}
+
+textarea:focus, input:focus {
+    outline: 0;
+}
+
+form input {
+    height: 40px;
+}
+
+form textarea {
+    height: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 0.6rem;
+    height: 40px;
+    font-family: 'Righteous', cursive;
+}
+
+button:hover {
+    color: #09d2d9;
+    border: 2px solid #09d2d9;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 40vh;
+        width: 100%;
+        top: 8vh;
+        background-color: #16151c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .div-content{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .footer-links{
+        width: 100%;
+    }
+}
+
+.error-input{
+    border: 2px solid #db0404;
+}
